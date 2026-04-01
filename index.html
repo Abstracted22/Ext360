@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Extinción 360 S.L. - Tu aliado en protección contra incendios. Instalación, mantenimiento y formación en sistemas contra incendios.">
+    <title>Extinción 360 | Protección Contra Incendios Premium</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo.jpeg" alt="Extinción 360 Logo" class="brand-logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="brand-fallback" style="display: none;">
+                    <span class="icon">🔥</span>
+                    <span class="text">Extinción<span class="highlight">360</span></span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#contact" class="nav-link btn-cta-small" data-i18n="nav_contact">Contacto</a></li>
+                    <li class="lang-selector">
+                        <span class="lang-btn active" data-lang="es" title="Español">
+                            <img src="https://flagcdn.com/w40/es.png" alt="Español" style="width: 28px; border-radius: 4px;">
+                        </span>
+                        <span class="lang-btn" data-lang="en" title="English">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="English" style="width: 28px; border-radius: 4px;">
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="hero-bg">
+            <img src="img/hero.png" alt="Fuego cinemático de fondo" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content fade-in-up">
+            <h1 class="hero-title" data-i18n="hero_title">Seguridad Total Frente al <span class="highlight-gradient">Fuego</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Ingeniería, instalación y mantenimiento de sistemas contra incendios al más alto
+                nivel. Protegemos lo que más importa.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary" data-i18n="hero_btn1">Ver Servicios</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn2">Asesoramiento Gratuito</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="about" class="about section">
+        <div class="container about-grid">
+            <div class="about-text fade-in-left">
+                <span class="section-tag" data-i18n="about_tag">¿Quiénes Somos?</span>
+                <h2 class="section-title" data-i18n="about_title">Confianza y Excelencia en <br>Protección Activa y Pasiva</h2>
+                <p data-i18n="about_desc">En <strong>Extinción 360 S.L.</strong> no solo vendemos equipos; diseñamos soluciones integrales de
+                    seguridad. Nuestro equipo de ingenieros y técnicos certificados
+                    garantiza que cada instalación cumpla con la normativa más exigente.</p>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text" data-i18n="about_stat_text">Garantía</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image fade-in-right">
+                <div class="glass-card image-wrapper">
+                    <img src="img/extinguishers.png" alt="Nuestros extintores premium" class="rounded-img">
+                    <div class="floating-badge">
+                        <span class="badge-icon">✓</span>
+                        <span data-i18n="about_badge">Certificados bajo Norma UNE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="services section bg-darker">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-tag" data-i18n="srv_tag">Soluciones</span>
+                <h2 class="section-title" data-i18n="srv_title">Nuestros Servicios <span class="highlight">Especializados</span></h2>
+                <p data-i18n="srv_subtitle">Cubrimos los 360 grados de la protección contra incendios de tu negocio.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card glass-card fade-in-up">
+                    <div class="service-img-container">
+                        <img src="img/extinguishers.png" alt="Extintores" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv1_title">Equipos de Extinción</h3>
+                        <p data-i18n="srv1_desc">Instalación y revisión de extintores manuales (polvo ABC, CO2, agua aditivada) y BIEs (Bocas
+                            de Incendio Equipadas).</p>
+                        <a href="#contact" class="service-link" data-i18n="srv1_link">Solicitar revisión →</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card glass-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="service-img-container">
+                        <img src="img/alarm.png" alt="Detección y Alarma" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv2_title">Detección y Alarmas</h3>
+                        <p data-i18n="srv2_desc">Sistemas analógicos y convencionales de detección de humo, calor y monóxido, integrando las
+                            últimas tecnologías IoT.</p>
+                        <a href="#contact" class="service-link" data-i18n="srv2_link">Saber más →</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card glass-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="service-img-container">
+                        <img src="img/sprinkler.png" alt="Sistemas Automáticos" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv3_title">Sistemas Automáticos</h3>
+                        <p data-i18n="srv3_desc">Diseño e implementación de redes de rociadores (sprinklers), extinción por gases limpios y
+                            agua nebulizada.</p>
+                        <a href="#contact" class="service-link" data-i18n="srv3_link">Consultar proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card glass-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="service-img-container">
+                        <img src="img/passive.png" alt="Protección Pasiva contra Incendios" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv4_title">Protección Pasiva</h3>
+                        <p data-i18n="srv4_desc">Puertas cortafuegos, sellados, sectorización e ignifugación de estructuras para contener la propagación del fuego y proteger vidas.</p>
+                        <a href="#contact" class="service-link" data-i18n="srv4_link">Saber más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact section">
+        <div class="container contact-grid">
+            <div class="contact-info fade-in-left">
+                <span class="section-tag" data-i18n="cnt_tag">Hablemos</span>
+                <h2 class="section-title" data-i18n="cnt_title">Obtén tu presupuesto sin compromiso</h2>
+                <p data-i18n="cnt_desc">Nuestro equipo técnico está listo para evaluar el riesgo de tus instalaciones y proponerte la mejor
+                    solución. Protege tu futuro hoy.</p>
+
+                <ul class="contact-details">
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-text">
+                            <strong data-i18n="cnt_dir_title">Dirección Fiscal</strong>
+                            <span>Calle Siena 33, 2°</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-text">
+                            <strong data-i18n="cnt_time_title">Atención de 8am a 18pm</strong>
+                            <span>+34 614 454 639</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-text">
+                            <strong data-i18n="cnt_email_title">Email</strong>
+                            <span>administracion@extincion360.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon">🏢</span>
+                        <div class="contact-text">
+                            <strong data-i18n="cnt_cif_title">CIF</strong>
+                            <span>B44833812</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-form-wrapper fade-in-right">
+                <div class="glass-card p-xl">
+                    <form class="contact-form" action="https://formsubmit.co/administracion@extincion360.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name_label">Nombre / Empresa</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required data-i18n-placeholder="form_name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="form_email_label">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required data-i18n-placeholder="form_email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="form_phone_label">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Ej. 600..." required data-i18n-placeholder="form_phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_msg_label">¿En qué podemos ayudarte?</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Necesito revisión de mis extintores..."
+                                required data-i18n-placeholder="form_msg"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full" data-i18n="form_btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Extinción 360 Logo" class="brand-logo-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="brand-fallback" style="display: none;">
+                        <span class="icon">🔥</span>
+                        <span class="text">Extinción<span class="highlight">360</span> S.L.</span>
+                    </div>
+                </div>
+                <p class="footer-desc mt-1" data-i18n="ft_desc">Soluciones avanzadas en protección contra incendios.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="aviso-legal.html" data-i18n="ft_legal">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html" data-i18n="ft_privacy">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html" data-i18n="ft_cookies">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="ft_copy">&copy; 2026 Extinción 360 S.L. | CIF: B44833812 | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34614454639?text=Hola%2C%20estoy%20interesado%20en%20los%20servicios%20de%20Extinci%C3%B3n%20360." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <div class="whatsapp-icon-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.066.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.005-5.804 4.729-10.512 10.539-10.512 2.813.002 5.456 1.099 7.443 3.088 1.988 1.989 3.083 4.634 3.081 7.445-.005 5.805-4.729 10.512-10.536 10.512z"/></svg>
+        </div>
+        <div class="whatsapp-text">
+            <span data-i18n="wa_span">¿Presupuestos o dudas?</span>
+            <strong data-i18n="wa_strong">Hablemos por aquí</strong>
+        </div>
+    </a>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
