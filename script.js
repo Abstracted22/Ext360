@@ -119,4 +119,89 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 4. Image Slider (Carousel)
+    const slides = document.querySelectorAll('#gallery .slide');
+    const dots = document.querySelectorAll('#gallery .dot');
+    const prevBtn = document.querySelector('#gallery .prev-btn');
+    const nextBtn = document.querySelector('#gallery .next-btn');
+    const sliderWrapper = document.querySelector('#gallery .slider-wrapper');
+    
+    let currentSlide = 0;
+    let slideInterval;
+    const slideDuration = 5000; // 5 seconds
+    
+    const showSlide = (index) => {
+        // Handle boundary conditions
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+        
+        // Update slider container translation for horizontal sliding (roulette effect)
+        const container = document.querySelector('#gallery .slider-container');
+        if (container) {
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+        
+        // Update slides active state
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentSlide);
+        });
+        
+        // Update dots active state
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlide);
+        });
+    };
+    
+    const nextSlide = () => {
+        showSlide(currentSlide + 1);
+    };
+    
+    const prevSlide = () => {
+        showSlide(currentSlide - 1);
+    };
+    
+    const startAutoSlide = () => {
+        stopAutoSlide(); // Clear any existing intervals
+        slideInterval = setInterval(nextSlide, slideDuration);
+    };
+    
+    const stopAutoSlide = () => {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+        }
+    };
+    
+    // Event Listeners for controls
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            startAutoSlide(); // Reset timer on click
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            startAutoSlide(); // Reset timer on click
+        });
+    }
+    
+    dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+            startAutoSlide(); // Reset timer on click
+        });
+    });
+    
+    // Pause on hover
+    if (sliderWrapper) {
+        sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+        sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+    }
+    
+    // Initialize auto-sliding
+    startAutoSlide();
 });
